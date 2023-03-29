@@ -1,0 +1,27 @@
+#brandPage
+    .bpToggle
+        background-color: $grey1
+        color: $grey6
+        @include type(16, 1.5, 700)
+        @include btnAppearance
+        @include btnStates($grey1)
+
+        &--container
+            padding-bottom: 48px
+            padding-top: 24px
+
+    .bpToggle--content
+        display: none
+
+    .bpToggle--content.is-visible 
+        display: block
+
+.layout-0 #brandPage
+    .bpToggle
+        @include type(14, 1.5, 700)
+
+@media only screen and (max-width: 809px)
+    .mobile #brandPage,
+    .mobileapp #brandPage
+        .bpToggle
+            @include type(14, 1.5, 700)

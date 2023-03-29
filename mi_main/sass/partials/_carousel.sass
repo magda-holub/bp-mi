@@ -1,0 +1,143 @@
+#brandPage .bpCarousel
+    position: relative
+
+    // carousel
+    .swiper-wrapper
+        padding-bottom: 10px
+        width: 100%
+        margin: 0 auto
+        height: auto
+    
+    .swiper-slide
+        border-radius: 6px
+        cursor: pointer
+        height: auto
+        transition: .3s ease-in-out
+        box-sizing: border-box
+        background: $white
+        text-align: center
+
+    .swiper--caption
+        margin: 8px
+        @include type(8, 1.25, 400 )
+
+        &__1, &__4, &__6,
+            text-align: right
+            width: 350px
+            position: absolute
+            bottom: 0
+            right: 0
+
+        &__5
+            text-align: left
+            width: 300px
+            position: absolute
+            bottom: 0
+            left: 0
+
+        &__6
+            color: white
+
+        
+    // bullets
+    .swiper-pagination
+        display: none
+        bottom: auto
+        left: 50%
+        transform: translate(-50%, 0)
+    
+    .swiper-pagination-bullet
+        margin-right: 5px
+
+        &:last-of-type
+            margin-right: 0       
+
+    .swiper-pagination-bullet
+        opacity: 1
+        background: #E8E8E8
+        width: 12px
+        height: 12px
+    
+    .swiper-pagination-bullet-active
+        background-color: $orange
+        opacity: 1
+    
+    .swiper-pagination-bullet:focus,
+    .swiper-pagination-bullet-active:focus
+        outline: transparent
+    
+    // buttons
+    .swiper-button-next, .swiper-button-prev
+        top: 50%
+        height: 32px
+        transform: translateY(-50%)
+    
+    .swiper-button-next:focus, .swiper-button-prev:focus
+        outline: transparent
+    
+    .swiper-button-prev, 
+    .swiper-container-rtl .swiper-button-next,
+    .swiper-button-next, 
+    .swiper-container-rtl .swiper-button-prev
+        background-image: none
+    
+    .swiper-button-prev:after,
+    .swiper-button-next:after
+        display: none
+    
+    .swiper-button-prev,
+    .swiper-button-next
+        width: 25px
+        height: 60px
+        background-color: $orange
+        border-radius: 0 4px 4px 0
+        transition: .3s ease-in-out
+        box-shadow: 0 1px 4px 0px rgba(0,0,0,0.15)
+        margin: 0
+
+        &:hover
+            background-color: $orangeDark
+        
+        .swiper-button-img
+            width: 12px
+
+            path
+                fill: $white
+                        
+    .swiper-button-prev
+        left: 0
+
+        .swiper-button-img
+            margin-left: 4px
+        
+    .swiper-button-next
+        right: 0
+        border-radius: 4px 0 0 4px
+        box-shadow: 0 1px 4px 0px rgba(0,0,0,0.15)
+
+        .swiper-button-img
+            margin-right: 4px 8px
+
+@media only screen and (max-width: 680px)
+    .mobile #brandPage,
+    .mobileapp #brandPage
+        .bpCarousel
+            .swiper--caption
+                margin: 4px 3px
+                @include type(7, 1.25, 400)
+
+                &__1, &__4, &__5, &__6,
+                    text-align: center
+                    width: unset
+                    position: static
+                    color: $grey6
+
+@media only screen and (max-width: 520px)
+    .mobile #brandPage,
+    .mobileapp #brandPage
+        .bpCarousel
+            .swiper-pagination
+                display: block
+
+            .swiper-button-prev, .swiper-button-next
+                display: none

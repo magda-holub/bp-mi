@@ -1,0 +1,72 @@
+#brandPage
+    h2.bpHdl2
+        @include roboto
+        @include type(30, 1.25, 700)
+        color: $grey6
+        
+    h3.bpHdl3
+        @include roboto
+        @include type(26, 1, 700)
+        color: $grey6
+
+    p.bpText
+        @include roboto
+        @include type(18, 1.5, 400)
+
+    a.bpLink
+        @include roboto
+        @include type(16, 1.5, 400)
+        text-decoration: none
+        color: $grey6
+
+        &:hover
+            color: $grey5
+
+    a.bpButton
+        @include roboto
+        @include type(16, 1.5, 700)
+        text-decoration: none
+        color: $white
+
+.layout-0 #brandPage
+    h2.bpHdl2
+        @include type(26, 1.25, 700)
+        
+    h3.bpHdl3
+        @include type(22, 1, 700)
+
+    p.bpText
+        @include type(14, 1.5, 400)
+
+    a.bpLink
+        @include type(14, 1.5, 400)
+
+    a.bpButton
+        @include type(14, 1.5, 700)
+
+@media only screen and (max-width: 809px)
+    .mobile #brandPage,
+    .mobileapp #brandPage
+        h2.bpHdl2
+            @include type(26, 1.25, 700)
+        
+        h3.bpHdl3
+            @include type(22, 1, 700)
+
+        p.bpText
+            @include type(14, 1.5, 400)
+
+        a.bpLink
+            @include type(12, 1.5, 400)
+
+        a.bpButton
+            @include type(14, 1.5, 700)
+
+@media only screen and (max-width: 420px)
+    .mobile #brandPage,
+    .mobileapp #brandPage
+        h3.bpHdl3
+            @include type(20, 1, 700)
+
+        p.bpText
+            @include type(12, 1.5, 400)

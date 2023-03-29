@@ -1,0 +1,48 @@
+//reset bp containeru
+.category-description
+    padding: 0!important
+
+#brandPage
+    display: block
+    position: relative
+    @include roboto
+    background-color: $white
+    color: $grey6
+
+    //reset
+    *, *::before, *::after
+        box-sizing: border-box
+
+    h1, h2, h3, h4, p, ul, ol, li, figure
+        margin: 0
+        padding: 0
+
+    p
+        display: block
+
+    ul
+        list-style-type: none
+
+    ul li:before
+        display: none
+
+    input, button, textarea, select
+        font: inherit
+
+    .hidden
+        display: none!important
+
+    //links
+    a
+        transition: all 300ms ease-in-out
+
+    //imgs
+    img
+        display: block
+        height: auto
+        max-width: 100%
+        aspect-ratio: attr(width), attr(height)
+
+    //alza styles reset
+#articlePage.blank p
+    margin-top: 0
