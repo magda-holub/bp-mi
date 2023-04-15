@@ -15,25 +15,24 @@
         &Nav
             @include pad(24, 24, 24, 24)
 
-            &--container
+            &__container
                 @include flexOr
                 justify-content: space-between
                 align-items: center
 
-            &--logo
+            &__logo
                 height: 56px
                 width: 56px
                 fill: $orange
-                cursor: pointer
                 transition: fill 300ms ease-in-out
 
-            &--menu
+            &__menu
                 @include flexOr
                 align-items: center
                 gap: 48px
                 list-style-type: none
 
-            &--home
+            &__home
                 height: 40px
                 width: 40px
                 fill: $orange
@@ -43,10 +42,10 @@
                 &:hover
                     fill: $orangeDark
 
-            &--hamburger
+            &__hamburger
                 display: none
 
-                &--list
+                &__list
                     display: none
                     height: 0
                     opacity: 0
@@ -68,7 +67,7 @@
                         a
                             display: block
 
-            &--hamburgerIcon
+            &__hamburgerIcon
                 // display: none
                 width: 30px
                 height: 22px
@@ -121,7 +120,7 @@
             align-items: center
             justify-content: space-between
 
-            &--caption
+            &__caption
                 width: 40%
 
             img
@@ -131,7 +130,7 @@
             @include pad(24, 0, 24, 0)
             position: relative
 
-            &--caption
+            &__caption
                 position: absolute
                 right: 24px
                 top: 50%
@@ -141,7 +140,7 @@
         &SingleLeft
             position: relative
 
-            &--caption
+            &__caption
                 position: absolute
                 left: 32px
                 top: 50%
@@ -161,14 +160,14 @@
 .layout-0 #brandPage
     .bp
         &Nav
-            &--logo
+            &__logo
                 height: 48px
                 width: 48px
 
-            &--menu
+            &__menu
                 gap: 24px
 
-            &--home
+            &__home
                 height: 24px
                 width: 24px
 
@@ -178,14 +177,14 @@
     .mobileapp #brandPage
         .bp
             &Nav
-                &--logo
+                &__logo
                     height: 48px
                     width: 48px
 
-                &--menu
+                &__menu
                     gap: 24px
 
-                &--home
+                &__home
                     height: 24px
                     width: 24px
 
@@ -197,7 +196,7 @@
                 flex-direction: column
                 gap: 24px
 
-                &--caption
+                &__caption
                     width: unset
 
                 .bpHdl2
@@ -219,7 +218,7 @@
                     object-fit: cover
                     object-position: 0 0
 
-                &--caption
+                &__caption
                     position: static
                     transform: unset
                     width: auto
@@ -231,7 +230,7 @@
                     margin-right: auto
 
             &SingleLeft
-                &--caption
+                &__caption
                     width: 55%
 
 @media only screen and (max-width: 600px)
@@ -239,7 +238,7 @@
     .mobileapp #brandPage
         .bp
             &SingleLeft
-                &--caption
+                &__caption
                     top: 24px
                     left: 50%
                     margin: auto
@@ -258,17 +257,17 @@
             &Nav
                 @include pad(12, 24, 12, 24)
 
-                &--logo
+                &__logo
                     width: 36px
                     height: 36px
 
-                &--menu
+                &__menu
                     display: none
 
-                &--hamburger
+                &__hamburger
                     display: block
 
-                    &--list
+                    &__list
                         display: block
 
             &Button
