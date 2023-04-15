@@ -17,28 +17,6 @@
         background: $white
         text-align: center
 
-    .swiper--caption
-        margin: 8px
-        @include type(8, 1.25, 400 )
-
-        &__1, &__4, &__6,
-            text-align: right
-            width: 350px
-            position: absolute
-            bottom: 0
-            right: 0
-
-        &__5
-            text-align: left
-            width: 300px
-            position: absolute
-            bottom: 0
-            left: 0
-
-        &__6
-            color: white
-
-        
     // bullets
     .swiper-pagination
         display: none
@@ -117,20 +95,6 @@
 
         .swiper-button-img
             margin-right: 4px 8px
-
-@media only screen and (max-width: 680px)
-    .mobile #brandPage,
-    .mobileapp #brandPage
-        .bpCarousel
-            .swiper--caption
-                margin: 4px 3px
-                @include type(7, 1.25, 400)
-
-                &__1, &__4, &__5, &__6,
-                    text-align: center
-                    width: unset
-                    position: static
-                    color: $grey6
 
 @media only screen and (max-width: 520px)
     .mobile #brandPage,
