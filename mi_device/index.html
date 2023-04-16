@@ -2,70 +2,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>alza</title>
+    <title>xiaomi okosotthon</title>
     <link rel="stylesheet" href="sass/main.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
 </head>
 <body>
 
-    <!--switcher-->
-    <div id="layout_switch">
-        <button type="button">M</button>
-        <button type="button">3</button>
-        <button type="button">4</button>
-    </div>
-    <!--end of-->
-
-    <div id="testLayout" class="layout-1">
-        <div id="articlePage">
-
-            <!--article-->
-            <div id="brandPage">
-                <!--divider-->
-                <div class="bpDivider"></div>
+        <!--switcher-->
+        <div id="layout_switch">
+            <button type="button">
+                <svg class="icon">
+                    <use xlink:href="#i-mobile"></use>
+                </svg>
+            </button>
+            <button type="button">
+                <svg class="icon">
+                    <use xlink:href="#i-desktop-3"></use>
+                </svg>
+            </button>
+            <button type="button" class="active">
+                <svg class="icon">
+                    <use xlink:href="#i-desktop-4"></use>
+                </svg>
+            </button>
+        </div>
+        <!--end of-->
+    
+        <div id="testLayout" class="layout-1">
+            <div id="articlePage">
+    
+                <!--article-->
+                <div id="brandPage">
+                    <!--divider-->
+                    <div class="bpDivider"></div>
             
-                <!--menu-->
-                <section class="bpNav">
-                    <div class="bpNav--container">
-                        <svg class="bpNav--logo">
-                            <use xlink:href="#mi_logo"></use>
-                        </svg>
+                    <!--menu-->
+                    <section class="bpNav">
+                        <div class="bpNav__container">
+                            <svg class="bpNav__logo">
+                                <use xlink:href="#mi_logo"></use>
+                            </svg>
             
-                        <ul class="bpNav--menu">
-                            <li class="bpNav--menu--item"><a class="bpLink" href="/18863045.htm">Okostelefonok</a></li>
-                            <li class="bpNav--menu--item"><a class="bpLink" href="/18855843-v4444.htm">Okosotthon</a></li>
-                            <li class="bpNav--menu--item"><a class="bpLink" href="/18890756-v4444.htm">Okoseszkökök</a></li>
-                            <li class="bpNav--menu--item">
-                                <a href="/v4444.htm">
-                                    <svg class="bpNav--home">
+                            <ul class="bpNav__menu">
+                                <li class="bpNav__menu__item"><a class="bpLink" href="../mi_phone/index.html">Okostelefonok</a></li><!--https://www.alza.hu/18863045.htm-->
+                                <li class="bpNav__menu__item"><a class="bpLink" href="../mi_device/index.html">Okosotthon</a></li><!--https://www.alza.hu/18855843-v4444.htm-->
+                                <li class="bpNav__menu__item"><a class="bpLink" href="../mi_smarthome/index.html">Okoseszkökök</a></li><!--https://www.alza.hu/18890756-v4444.htm-->
+                                <li class="bpNav__menu__item">
+                                    <a href="../mi_main/index.html"><!--https://www.alza.hu/v4444.htm-->
+                                        <svg class="bpNav__home">
+                                            <use xlink:href="#mi_home"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="bpNav__hamburger">
+                                <div class="bpNav__hamburgerIcon" id="bpHamburger">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <ul class="bpNav__hamburger__list" id="bpHamburgerList">
+                            <li class="bpNav__hamburger__listItem"><a class="bpLink" href="../mi_phone/index.html">Okostelefonok</a></li><!--https://www.alza.hu/18863045.ht-->
+                            <li class="bpNav__hamburger__listItem"><a class="bpLink" href="../mi_device/index.html">Okosotthon</a></li><!--https://www.alza.hu/18855843-v4444.htm-->
+                            <li class="bpNav__hamburger__listItem"><a class="bpLink" href="../mi_smarthome/index.html">Okoseszkökök</a></li><!--https://www.alza.hu/18890756-v4444.htm-->
+                            <li class="bpNav__hamburger__listItem">
+                                <a href="../mi_main/index.html"><!--https://www.alza.hu/v4444.htm-->
+                                    <svg class="bpNav__home">
                                         <use xlink:href="#mi_home"></use>
                                     </svg>
                                 </a>
                             </li>
                         </ul>
-                        <div class="bpNav--hamburger">
-                            <div class="bpNav--hamburgerIcon" id="bpHamburger">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-                        </div>
-                    </div>
-            
-                    <ul class="bpNav--hamburger--list" id="bpHamburgerList">
-                        <li class="bpNav--hamburger--listItem"><a class="bpLink" href="/18863045.htm">Okostelefonok</a></li>
-                        <li class="bpNav--hamburger--listItem"><a class="bpLink" href="/18855843-v4444.htm">Okosotthon</a></li>
-                        <li class="bpNav--hamburger--listItem"><a class="bpLink" href="/18890756-v4444.htm">Okoseszkökök</a></li>
-                        <li class="bpNav--hamburger--listItem">
-                            <a href="/v4444.htm">
-                                <svg class="bpNav--home">
-                                    <use xlink:href="#mi_home"></use>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
-                </section>
+                    </section>
             
                 <!--single row 1-->
                 <section class="bpSingleRight">
@@ -76,42 +87,42 @@
                         <source media="(min-width: 541px)" width="1085" height="363" srcset="https://cdn.alza.cz/Foto/or/bp/xiaomi/miDevice/img/miDevice1.png, https://cdn.alza.cz/Foto/or/bp/xiaomi/miDevice/img/miDevice1@2x.png 2x" type="image/png" />
                         <img src="https://cdn.alza.cz/Foto/or/bp/xiaomi/miDevice/img/miDevice1.webp" alt="Xiaomi elektromos roller" width="1085" height="363" />
                     </picture>
-                    <div class="bpSingleRight--caption">
+                    <div class="bpSingleRight__caption">
                         <h2 class="bpHdl2">Elektromos roller</h2>
             
                         <p class="bpText mt16">Dobd fel az utazást a Xiaomi egyik legnépszerűbb termékcsaládjával, amely mindig kiváló teljesítményt, és nagy hatótávolságot kínál!</p>
-                        <a class="bpButton mt16" href="/18859663-v4444.htm">Tovább</a>
+                        <a class="bpButton mt16" href="https://www.alza.hu/18859663-v4444.htm">Tovább</a>
                     </div>
                 </section>
             
                 <!--toggled content-->
-                <div class="bpToggle--content mOr" id="bpContent">
+                <div class="bpToggle__content mOr" id="bpContent">
                     <!--double image-->
                     <section class="bpDouble">
-                        <div class="bpDouble--unit">
+                        <div class="bpDouble__unit">
                             <picture>
                                 <source width="503" height="466" srcset="https://cdn.alza.cz/Foto/or/bp/xiaomi/miDevice/img/miDevice_small1.webp, https://cdn.alza.cz/Foto/or/bp/xiaomi/miDevice/img/miDevice_small1@2x.webp 2x" type="image/webp" />
                                 <source width="503" height="466" srcset="https://cdn.alza.cz/Foto/or/bp/xiaomi/miDevice/img/miDevice_small1.png, https://cdn.alza.cz/Foto/or/bp/xiaomi/miDevice/img/miDevice_small1@2x.png 2x" type="image/png" />
                                 <img src="https://cdn.alza.cz/Foto/or/bp/xiaomi/miDevice/img/miDevice_small1.webp" alt="Xiaomi aktivitásmérő" width="503" height="466"/>
                             </picture>
-                            <div class="bpDouble--caption">
+                            <div class="bpDouble__caption">
                                 <h3 class="bpHdl3">Aktivitásmérő</h3>
             
-                                <p class="bpText bpDouble--text mt16">Hozd ki magadból a legtöbbet, és élj egészségesebben a Xiaomi aktivitásmérők segítségével!</p>
-                                <a class="bpButton mt16 mCnr" href="/18856509-v4444.htm">Tovább</a>
+                                <p class="bpText bpDouble__text mt16">Hozd ki magadból a legtöbbet, és élj egészségesebben a Xiaomi aktivitásmérők segítségével!</p>
+                                <a class="bpButton mt16 mCnr" href="https://www.alza.hu/18856509-v4444.htm">Tovább</a>
                             </div>
                         </div>
-                        <div class="bpDouble--unit">
+                        <div class="bpDouble__unit">
                             <picture>
                                 <source width="503" height="466" srcset="https://cdn.alza.cz/Foto/or/bp/xiaomi/miDevice/img/miDevice_small2.webp, https://cdn.alza.cz/Foto/or/bp/xiaomi/miDevice/img/miDevice_small2@2x.webp 2x" type="image/webp" />
                                 <source width="503" height="466" srcset="https://cdn.alza.cz/Foto/or/bp/xiaomi/miDevice/img/miDevice_small2.png, https://cdn.alza.cz/Foto/or/bp/xiaomi/miDevice/img/miDevice_small2@2x.png 2x" type="image/png" />
                                 <img src="https://cdn.alza.cz/Foto/or/bp/xiaomi/miDevice/img/miDevice_small2.webp" alt="Xiaomi okosóra" width="503" height="466"/>
                             </picture>
-                            <div class="bpDouble--caption">
+                            <div class="bpDouble__caption">
                                 <h3 class="bpHdl3">Okosóra</h3>
             
-                                <p class="bpText bpDouble--text mt16">Sportosan stílusos Xiaomi okosórák a teljesítményed növelése és a tökéletes megjelenés jegyében.</p>
-                                <a class="bpButton mt16 mCnr" href="/18854785-v4444.htm">Tovább</a>
+                                <p class="bpText bpDouble__text mt16">Sportosan stílusos Xiaomi okosórák a teljesítményed növelése és a tökéletes megjelenés jegyében.</p>
+                                <a class="bpButton mt16 mCnr" href="https://www.alza.hu/18854785-v4444.htm">Tovább</a>
                             </div>
                         </div>
                     </section>
@@ -125,55 +136,55 @@
                             <source media="(min-width: 541px)" width="1085" height="363" srcset="https://cdn.alza.cz/Foto/or/bp/xiaomi/miDevice/img/miDevice4.png, https://cdn.alza.cz/Foto/or/bp/xiaomi/miDevice/img/miDevice4@2x.png 2x" type="image/png" />
                             <img src="https://cdn.alza.cz/Foto/or/bp/xiaomi/miDevice/img/miDevice4.webp" alt="Xiaomi Audio" width="1085" height="363" class="no-lazy" />
                         </picture>
-                        <div class="bpSingleLeft--caption">
+                        <div class="bpSingleLeft__caption">
                             <h2 class="bpHdl2">Audio</h2>
             
                             <p class="bpText mt16">Élvezd a vezeték nélküli szabadságot, és hallgasd kedvenc zenéidet nagyszerű minőségben, bárhol is jársz!</p>
-                            <a class="bpButton mt16" href="/18852655-v4444.htm">Tovább</a>
+                            <a class="bpButton mt16" href="https://www.alza.hu/18852655-v4444.htm">Tovább</a>
                         </div>
                     </section>
             
                     <!--double image-->
                     <section class="bpDouble">
-                        <div class="bpDouble--unit">
+                        <div class="bpDouble__unit">
                             <picture>
                                 <source width="503" height="466" srcset="https://cdn.alza.cz/Foto/or/bp/xiaomi/miDevice/img/miDevice_small3.webp, https://cdn.alza.cz/Foto/or/bp/xiaomi/miDevice/img/miDevice_small3@2x.webp 2x" type="image/webp" />
                                 <source width="503" height="466" srcset="https://cdn.alza.cz/Foto/or/bp/xiaomi/miDevice/img/miDevice_small3.png, https://cdn.alza.cz/Foto/or/bp/xiaomi/miDevice/img/miDevice_small3@2x.png 2x" type="image/png" />
                                 <img src="https://cdn.alza.cz/Foto/or/bp/xiaomi/miDevice/img/miDevice_small3.webp" alt="Xiaomi lifestyle" width="503" height="466"/>
                             </picture>
-                            <div class="bpDouble--caption">
+                            <div class="bpDouble__caption">
                                 <h3 class="bpHdl3">Lifestyle</h3>
             
                                 <p class="bpText mt16">Mindennapi okos-megoldások a konyhába és a fürdőszobába.</p>
-                                <a class="bpButton mt16 mCnr" href="/18857643-v4444.htm">Tovább</a>
+                                <a class="bpButton mt16 mCnr" href="https://www.alza.hu/18857643-v4444.htm">Tovább</a>
                             </div>
                         </div>
-                        <div class="bpDouble--unit">
+                        <div class="bpDouble__unit">
                             <picture>
                                 <source width="503" height="466" srcset="https://cdn.alza.cz/Foto/or/bp/xiaomi/miDevice/img/miDevice_small4.webp, https://cdn.alza.cz/Foto/or/bp/xiaomi/miDevice/img/miDevice_small4@2x.webp 2x" type="image/webp" />
                                 <source width="503" height="466" srcset="https://cdn.alza.cz/Foto/or/bp/xiaomi/miDevice/img/miDevice_small4.png, https://cdn.alza.cz/Foto/or/bp/xiaomi/miDevice/img/miDevice_small4@2x.png 2x" type="image/png" />
                                 <img src="https://cdn.alza.cz/Foto/or/bp/xiaomi/miDevice/img/miDevice_small4.webp" alt="Xiaomi kiegészítő termékek" width="503" height="466"/>
                             </picture>
-                            <div class="bpDouble--caption">
+                            <div class="bpDouble__caption">
                                 <h3 class="bpHdl3">Kiegészítő termékek</h3>
             
                                 <p class="bpText mt16">Powerbankok, töltők, és megannyi más hasznos kiegészítők sokasága.</p>
-                                <a class="bpButton mt16 mCnr" href="/18861668-v4444.htm">Tovább</a>
+                                <a class="bpButton mt16 mCnr" href="https://www.alza.hu/18861668-v4444.htm">Tovább</a>
                             </div>
                         </div>
                     </section>
                 </div>
             
                 <!--bpToggle button-->
-                <div class="bpToggle--container">
+                <div class="bpToggle__container">
                     <a class="bpToggle toggle mCnr" href="#bpContent" id="bpToggle">Mutass többet</a>
                 </div>
             
                 <!--text for bpToggle button-->
-                <div class="bpToggle--text hidden">
-                    <p id="bpToggle--text__collapsed">Mutass többet</p>
+                <div class="bpToggle__text hidden">
+                    <p id="bpToggle__text--collapsed">Mutass többet</p>
             
-                    <p id="bpToggle--text__expanded">Mutass kevesebbet</p>
+                    <p id="bpToggle__text--expanded">Mutass kevesebbet</p>
                 </div>
             
                 <!--svgs-->
@@ -186,6 +197,70 @@
                     </symbol>
                     <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43.762 39.337" id="mi_home">
                         <path d="M-139.481,95.262l-21.277,19.89a.6.6,0,0,0,.412,1.042h4.712a.6.6,0,0,1,.6.6v17.038a.6.6,0,0,0,.6.6h10.1a.6.6,0,0,0,.6-.6V122.646a.6.6,0,0,1,.6-.6h8.115a.6.6,0,0,1,.6.6v11.189a.6.6,0,0,0,.6.6h10.1a.6.6,0,0,0,.6-.6V116.8a.6.6,0,0,1,.6-.6h4.712a.6.6,0,0,0,.411-1.042l-21.277-19.89A.6.6,0,0,0-139.481,95.262Z" transform="translate(160.95 -95.1)"></path>
+                    </symbol>
+                    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" id="i-desktop-3">
+                        <g transform="translate(-304.5 -296)">
+                            <rect width="60" height="60" transform="translate(304.5 296)" fill="none"></rect>
+                            <path
+                                d="M-10.613-15H30.613A4.4,4.4,0,0,1,35-10.6V19.771a4.4,4.4,0,0,1-4.387,4.4H-10.613A4.4,4.4,0,0,1-15,19.771V-10.6A4.4,4.4,0,0,1-10.613-15ZM30.613,21.679a1.908,1.908,0,0,0,1.9-1.909V-10.6a1.908,1.908,0,0,0-1.9-1.909H-10.613a1.908,1.908,0,0,0-1.9,1.909V19.771a1.908,1.908,0,0,0,1.9,1.909Z"
+                                transform="translate(324.5 319)"></path>
+                            <path d="M46.9-12.553H0V-15H46.9Z" transform="translate(311.05 348.537)"></path>
+                            <path
+                                d="M-11.493-12.553h-2.284A1.223,1.223,0,0,1-15-13.777,1.223,1.223,0,0,1-13.777-15h2.284a1.223,1.223,0,0,1,1.223,1.223A1.223,1.223,0,0,1-11.493-12.553Z"
+                                transform="translate(347.135 352.099)"></path>
+                            <path
+                                d="M3.025-12.553h-16.8A1.223,1.223,0,0,1-15-13.777,1.223,1.223,0,0,1-13.777-15h16.8a1.223,1.223,0,0,1,1.223,1.223A1.223,1.223,0,0,1,3.025-12.553Z"
+                                transform="translate(339.876 362.124)"></path>
+                            <path d="M-13.175,3.883l-1.468-6.606,2.389-.531,1.468,6.606Z" transform="translate(351.234 344.73)"></path>
+                            <path
+                                d="M-13.779-10.109a1.227,1.227,0,0,1-.279-.032,1.223,1.223,0,0,1-.913-1.469l.571-2.447a1.223,1.223,0,0,1,1.469-.913,1.223,1.223,0,0,1,.913,1.469l-.571,2.447A1.224,1.224,0,0,1-13.779-10.109Z"
+                                transform="translate(343.52 359.681)"></path>
+                            <path
+                                d="M7.676,0H3.3A1.81,1.81,0,0,1,1.948-.425a1.909,1.909,0,0,1-.405-1.353V-12.539A1.874,1.874,0,0,1,1.958-13.9,1.843,1.843,0,0,1,3.3-14.316H7.939a10.824,10.824,0,0,1,1.777.127,3.787,3.787,0,0,1,1.348.488,3.536,3.536,0,0,1,.9.726,3.383,3.383,0,0,1,.6,1.025,3.431,3.431,0,0,1,.205,1.187,3.292,3.292,0,0,1-2.148,3.145q2.822.9,2.822,3.5a3.929,3.929,0,0,1-.615,2.163A3.692,3.692,0,0,1,11.162-.5a5.9,5.9,0,0,1-1.5.386A15.325,15.325,0,0,1,7.676,0ZM7.461-6.357H4.443v4.18H7.559Q10.5-2.178,10.5-4.3a1.728,1.728,0,0,0-.762-1.572A4.267,4.267,0,0,0,7.461-6.357ZM4.443-12.139v3.7H7.1a5.334,5.334,0,0,0,1.675-.205,1.6,1.6,0,0,0,.9-.781,1.76,1.76,0,0,0,.244-.918,1.425,1.425,0,0,0-.771-1.44A5.894,5.894,0,0,0,6.8-12.139Z"
+                                transform="translate(327.01 327.316)"></path>
+                        </g>
+                    </symbol>
+                    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="i-mobile">
+                        <g transform="translate(-1074 -254)">
+                            <rect width="64" height="64" transform="translate(1074 254)" fill="none"></rect>
+                            <path
+                                d="M-9.108-15H10a5.9,5.9,0,0,1,5.892,5.892V29.108A5.9,5.9,0,0,1,10,35H-9.108A5.9,5.9,0,0,1-15,29.108V-9.108A5.9,5.9,0,0,1-9.108-15ZM10,32.475a3.371,3.371,0,0,0,3.367-3.367V-9.108A3.371,3.371,0,0,0,10-12.475H-9.108a3.371,3.371,0,0,0-3.367,3.367V29.108a3.371,3.371,0,0,0,3.367,3.367Z"
+                                transform="translate(1105 276)"></path>
+                            <path
+                                d="M-12.989-15a2.013,2.013,0,0,1,2.011,2.011,2.013,2.013,0,0,1-2.011,2.011A2.013,2.013,0,0,1-15-12.989,2.013,2.013,0,0,1-12.989-15Z"
+                                transform="translate(1118.435 318.72)"></path>
+                            <path
+                                d="M13.419-12.587H-13.735A1.237,1.237,0,0,1-15-13.793,1.237,1.237,0,0,1-13.735-15H13.419a1.237,1.237,0,0,1,1.265,1.207A1.237,1.237,0,0,1,13.419-12.587Z"
+                                transform="translate(1105.603 315.107)"></path>
+                            <path
+                                d="M13.419-12.587H-13.735A1.237,1.237,0,0,1-15-13.793,1.237,1.237,0,0,1-13.735-15H13.419a1.237,1.237,0,0,1,1.265,1.207A1.237,1.237,0,0,1,13.419-12.587Z"
+                                transform="translate(1105.603 284.226)"></path>
+                            <path
+                                d="M-3.658-12.587H-13.793A1.207,1.207,0,0,1-15-13.793,1.207,1.207,0,0,1-13.793-15H-3.658a1.207,1.207,0,0,1,1.207,1.207A1.207,1.207,0,0,1-3.658-12.587Z"
+                                transform="translate(1114.172 279.982)"></path>
+                        </g>
+                    </symbol>
+                    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" id="i-desktop-4">
+                        <g transform="translate(-304.5 -296)">
+                            <rect width="60" height="60" transform="translate(304.5 296)" fill="none"></rect>
+                            <path
+                                d="M-10.613-15H30.613A4.4,4.4,0,0,1,35-10.6V19.771a4.4,4.4,0,0,1-4.387,4.4H-10.613A4.4,4.4,0,0,1-15,19.771V-10.6A4.4,4.4,0,0,1-10.613-15ZM30.613,21.679a1.908,1.908,0,0,0,1.9-1.909V-10.6a1.908,1.908,0,0,0-1.9-1.909H-10.613a1.908,1.908,0,0,0-1.9,1.909V19.771a1.908,1.908,0,0,0,1.9,1.909Z"
+                                transform="translate(324.5 319)"></path>
+                            <path d="M46.9-12.553H0V-15H46.9Z" transform="translate(311.05 348.537)"></path>
+                            <path
+                                d="M-11.493-12.553h-2.284A1.223,1.223,0,0,1-15-13.777,1.223,1.223,0,0,1-13.777-15h2.284a1.223,1.223,0,0,1,1.223,1.223A1.223,1.223,0,0,1-11.493-12.553Z"
+                                transform="translate(347.135 352.099)"></path>
+                            <path
+                                d="M3.025-12.553h-16.8A1.223,1.223,0,0,1-15-13.777,1.223,1.223,0,0,1-13.777-15h16.8a1.223,1.223,0,0,1,1.223,1.223A1.223,1.223,0,0,1,3.025-12.553Z"
+                                transform="translate(339.876 362.124)"></path>
+                            <path d="M-13.175,3.883l-1.468-6.606,2.389-.531,1.468,6.606Z" transform="translate(351.234 344.73)"></path>
+                            <path
+                                d="M-13.779-10.109a1.227,1.227,0,0,1-.279-.032,1.223,1.223,0,0,1-.913-1.469l.571-2.447a1.223,1.223,0,0,1,1.469-.913,1.223,1.223,0,0,1,.913,1.469l-.571,2.447A1.224,1.224,0,0,1-13.779-10.109Z"
+                                transform="translate(343.52 359.681)"></path>
+                            <path
+                                d="M10.723-1.621l-.684-1.8H4.219L3.535-1.582a6.427,6.427,0,0,1-.684,1.45,1.087,1.087,0,0,1-.928.376,1.36,1.36,0,0,1-.967-.4,1.226,1.226,0,0,1-.42-.908,2.026,2.026,0,0,1,.1-.605q.1-.313.322-.869l3.662-9.3L5-12.8a4.864,4.864,0,0,1,.469-.933,1.9,1.9,0,0,1,.654-.6,2.006,2.006,0,0,1,1-.229,2.027,2.027,0,0,1,1.011.229,1.943,1.943,0,0,1,.654.591,4.144,4.144,0,0,1,.42.776q.171.415.435,1.108l3.74,9.238a4.644,4.644,0,0,1,.439,1.533,1.269,1.269,0,0,1-.415.913,1.364,1.364,0,0,1-1,.415,1.3,1.3,0,0,1-.586-.122,1.2,1.2,0,0,1-.41-.332,3.055,3.055,0,0,1-.356-.645Q10.859-1.289,10.723-1.621ZM4.98-5.6H9.258L7.1-11.5Z"
+                                transform="translate(327.322 327.561)"></path>
+                        </g>
                     </symbol>
                 </svg>
             </div>
