@@ -1,3 +1,4 @@
+// brand page reveal hidden content button
 function revealer() {
     let button = document.getElementById('bpToggle')
 
@@ -17,22 +18,24 @@ function revealer() {
     }, false);
 
     button.addEventListener('click', function handleClick(){
-        let initialText = document.getElementById('bpToggle--text__collapsed').textContent;
+        let initialText = document.getElementById('bpToggle__text--collapsed').textContent;
 
         if (button.textContent.toLocaleLowerCase().includes(initialText.toLowerCase())) {
-            button.textContent = document.getElementById('bpToggle--text__expanded').textContent;
+            button.textContent = document.getElementById('bpToggle__text--expanded').textContent;
         } else {
             button.textContent = initialText;
         }
     });
 }; revealer();
 
-$("#h1cc").insertAfter("#categoryUpperDescription")
+// hide testing template in production - presentation for vendor
+function template() {
+    if (window.location.href.indexOf("testingBP") > -1) {
+        document.getElementById("bpTest").style.display = "block"
+    };
+}; template();
 
-if (window.location.href.indexOf("testingBP") > -1) {
-  document.getElementById("bpTest").style.display = "block"
-}
-
+// header menu
 function hamburger() {
   var icon = document.getElementById('bpHamburger'),
       list = document.getElementById('bpHamburgerList');
