@@ -15,25 +15,24 @@
         &Nav
             @include pad(24, 24, 24, 24)
 
-            &--container
+            &__container
                 @include flexOr
                 justify-content: space-between
                 align-items: center
 
-            &--logo
+            &__logo
                 height: 56px
                 width: 56px
                 fill: $orange
-                cursor: pointer
                 transition: fill 300ms ease-in-out
 
-            &--menu
+            &__menu
                 @include flexOr
                 align-items: center
                 gap: 48px
                 list-style-type: none
 
-            &--home
+            &__home
                 height: 40px
                 width: 40px
                 fill: $orange
@@ -43,10 +42,10 @@
                 &:hover
                     fill: $orangeDark
 
-            &--hamburger
+            &__hamburger
                 display: none
 
-                &--list
+                &__list
                     display: none
                     height: 0
                     opacity: 0
@@ -68,7 +67,7 @@
                         a
                             display: block
 
-            &--hamburgerIcon
+            &__hamburgerIcon
                 // display: none
                 width: 30px
                 height: 22px
@@ -118,7 +117,7 @@
             margin-bottom: 24px
             position: relative
 
-            &--caption
+            &__caption
                 position: absolute
                 right: 32px
                 top: 50%
@@ -132,7 +131,7 @@
             position: relative
             margin-bottom: 24px
 
-            &--caption
+            &__caption
                 position: absolute
                 left: 32px
                 top: 50%
@@ -144,14 +143,14 @@
             @include flexOr
             gap: 24px
 
-            &--unit
+            &__unit
                 position: relative
 
                 &:nth-of-type(2)                 
                     .bpHdl3, .bpText
                         color: $white
                 
-            &--caption
+            &__caption
                 position: absolute
                 bottom: 32px
                 left: 50%
@@ -159,7 +158,7 @@
                 width: 85%
                 text-align: center
 
-            &--text
+            &__text
                 min-height: 82px
 
         &Button
@@ -172,24 +171,24 @@
 .layout-0 #brandPage
     .bp
         &Nav
-            &--logo
+            &__logo
                 height: 48px
                 width: 48px
 
-            &--menu
+            &__menu
                 gap: 24px
 
-            &--home
+            &__home
                 height: 24px
                 width: 24px
 
         &Double
             gap: 16px
                 
-            &--caption
+            &__caption
                 bottom: 24px
             
-            &--text
+            &__text
                 min-height: unset
 
 //mobile
@@ -198,24 +197,24 @@
     .mobileapp #brandPage
         .bp
             &Nav
-                &--logo
+                &__logo
                     height: 48px
                     width: 48px
 
-                &--menu
+                &__menu
                     gap: 24px
 
-                &--home
+                &__home
                     height: 24px
                     width: 24px
 
             &Double
                 gap: 16px
                     
-                &--caption
+                &__caption
                     bottom: 24px
                 
-                &--text
+                &__text
                     min-height: unset
 
 @media only screen and (max-width: 760px)
@@ -223,7 +222,7 @@
     .mobileapp #brandPage
         .bp
             &SingleRight
-                &--caption
+                &__caption
                     width: calc( 100% - 48px )
                     margin: auto
                     right: 50%
@@ -235,7 +234,7 @@
                         margin-right: auto
 
             &SingleLeft
-                &--caption
+                &__caption
                     width: 48%
 
             &Double
@@ -249,7 +248,7 @@
     .mobileapp #brandPage
         .bp
             &SingleLeft
-                &--caption
+                &__caption
                     top: 24px
                     left: 50%
                     margin: auto
@@ -268,17 +267,17 @@
             &Nav
                 @include pad(12, 24, 12, 24)
 
-                &--logo
+                &__logo
                     width: 36px
                     height: 36px
 
-                &--menu
+                &__menu
                     display: none
 
-                &--hamburger
+                &__hamburger
                     display: block
 
-                    &--list
+                    &__list
                         display: block
 
             &Button
@@ -292,14 +291,14 @@
             &SingleLeft, &SingleRight
                 margin-bottom: 0
 
-                &--caption
+                &__caption
                     width: 90%
 
             &Double
                 @include pad(24, 0, 24, 0)
                 gap: 24px
 
-                &--caption
+                &__caption
                     width: 90%
 
 @media only screen and (max-width: 360px)
